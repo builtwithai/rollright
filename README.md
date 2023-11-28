@@ -89,6 +89,3 @@ The project and the model are licensed under the MIT License. See the `LICENSE` 
 ## Credits
 The project and the model were created by the following authors and contributors:
 
-* Alice Smith - https://github.com/alice-smith
-* Bob Jones - https://github.com/bob-jones
-* Charlie Lee - https://github.com/charlie-lee
