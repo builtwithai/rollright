@@ -15,33 +15,6 @@ To install the packages, run the following command in the terminal:
 pip install -r requirements.txt
 ```
 
-## Usage
-To run the code, you need to provide either an image file or a video file as an argument. The code will load the file, preprocess it, and use the TensorFlow Lite model to predict whether the image or the video contains ASL for a door or not. The code will print the predicted label for the file.
-
-For example, to run the code with an image file, use the following command:
-
-```
-python main.py --image tests/testdoor.jpeg
-```
-
-The expected output is:
-
-```
-image_path: tests/testdoor.jpeg
-Predicted label for tests/testdoor.jpeg: Door
-```
-
-To run the code with a video file, use the following command:
-
-```
-python main.py --video tests/test.mp4
-```
-
-The expected output is:
-
-```
-Predicted label for tests/test.mp4: Door
-```
 
 ## Testing
 To test the prediction functions, you can use the `unittest` module and the `test_main.py` file. The file contains three test cases, one for each function: `predict_label`, `predict_label_from_video`, and `preprocess`. The file uses some test images and a video from the `tests` directory.
@@ -56,10 +29,10 @@ The expected output is:
 
 ```
 image_path: tests/testdoor.jpeg
-Predicted label for tests/testdoor.jpeg: Door
+Predicted label for tests/testdoor.jpeg: Open Door
 image_path: tests/testnotdoor.jpeg
-Predicted label for tests/testnotdoor.jpeg: Not Door
-Predicted label for tests/test.mp4: Door
+Predicted label for tests/testnotdoor.jpeg: Other Sign
+Predicted label for tests/test.mp4: Open Door
 ...
 ----------------------------------------------------------------------
 Ran 3 tests in 3.456s
