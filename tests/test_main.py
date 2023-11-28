@@ -20,7 +20,7 @@ class TestPredictLabel(unittest.TestCase):
         # Check that the result is as expected
         # This will depend on what your function returns
         # For example, if it returns a label, you might check that the label is correct
-        self.assertEqual(result, 'Door')
+        self.assertEqual(result, 'Open Door')
 
     def test_predict_label_not_door(self):
         # Use a known image for the test
@@ -33,7 +33,7 @@ class TestPredictLabel(unittest.TestCase):
         # Check that the result is as expected
         # This will depend on what your function returns
         # For example, if it returns a label, you might check that the label is correct
-        self.assertEqual(result, 'Not Door')
+        self.assertEqual(result, 'Other Sign')
     
     def test_predict_label_from_video(self):
         # Use a known image for the test
@@ -44,7 +44,7 @@ class TestPredictLabel(unittest.TestCase):
         # Check that the result is as expected
         # This will depend on what your function returns
         # For example, if it returns a label, you might check that the label is correct
-        self.assertEqual(result, 'Door')
+        self.assertEqual(result, 'Open Door')
 
 
 

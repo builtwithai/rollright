@@ -27,7 +27,7 @@ def load_and_preprocess_image(image_path):
 
 # Create labels
 def create_labels():
-    labels = np.array(["Door", "Not Door"])
+    labels = np.array(["Open Door", "Other Sign"])
     return labels
 
 labels = create_labels()
