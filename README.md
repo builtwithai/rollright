@@ -30,6 +30,7 @@ Install MDT
 python3 -m pip install --user mendel-development-tool
 
 ```
+![image](https://github.com/builtwithai/rollright/assets/10250297/0dfb338b-49ff-4cee-9850-a44721beb3e4)
 
 ## Software
 The following software is required for this project:
