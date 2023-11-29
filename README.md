@@ -4,9 +4,9 @@ Roll Right is an innovative machine learning application designed to enhance acc
 ---
 ## Hardware
 The following components are required for this project:
-1. [Coral Dev Board Micro](https://coral.ai/docs/dev-board-micro/get-started/)
+1. [Coral Dev Board Mini](https://coral.ai/docs/dev-board-micro/get-started/)
 2. USB 2.0 to TTL Module Serial Converter Adapter
-3. USB-C Power Supply
+3. USB-C Power Supply (5V 2A)
 4. [Coral Camera Module](https://coral.ai/docs/camera/datasheet) or webcam feed
 ---
 
@@ -24,7 +24,10 @@ screen /dev/cu.usbserial-0001 115200
 ```
 
 ## Flash Coral Dev Board before running the project
+
+Install MDT
 ```bash
+python3 -m pip install --user mendel-development-tool
 
 ```
 
