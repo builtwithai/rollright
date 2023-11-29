@@ -6,7 +6,25 @@ Roll Right is an innovative machine learning application designed to enhance acc
 The following components are required for this project:
 1. [Coral Dev Board Micro](https://coral.ai/docs/dev-board-micro/get-started/)
 2. USB 2.0 to TTL Module Serial Converter Adapter
+3. USB-C Power Supply
+4. [Coral Camera Module](https://coral.ai/docs/camera/datasheet) or webcam feed
 ---
+
+## Setup Coral Dev Board Micro
+1. Follow the [Getting Started Guide](https://coral.ai/docs/dev-board-micro/get-started/) to setup the Coral Dev Board Micro for the platform you are using.
+2. Connect the Coral Camera Module to the Coral Dev Board Micro
+3. Connect the USB 2.0 to TTL Module Serial Converter Adapter to the Coral Dev Board Micro
+4. Connect the USB-C Power Supply to the Coral Dev Board Micro
+
+## Connect to the Coral Dev Board Micro
+```bash
+screen /dev/cu.usbserial-0001 115200
+```
+
+## Flash Coral Dev Board before running the project
+```bash
+
+```
 
 ## Software
 The following software is required for this project:
@@ -19,9 +37,14 @@ The following software is required for this project:
   * pillow
   * opencv-python
 
+
+
+
 To install the packages, run the following command in the terminal:
 
 ```
+gh repo clone builtwithai/rollright
+cd rollright
 pip install -r requirements.txt
 ```
 
