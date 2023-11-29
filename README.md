@@ -25,12 +25,89 @@ screen /dev/cu.usbserial-0001 115200
 
 ## Flash Coral Dev Board before running the project
 
-Install MDT
+Install MDT & follow steps to flash the Coral Dev Board before using the project
 ```bash
 python3 -m pip install --user mendel-development-tool
 
 ```
 ![image](https://github.com/builtwithai/rollright/assets/10250297/0dfb338b-49ff-4cee-9850-a44721beb3e4)
+
+```bash
+bash -x ./flash.sh
+...
+...
+...
+Writing 'rootfs'                                   OKAY [196.265s]
+Finished. Total time: 477.691s
++216:try /Users/megamanics/bin/fastboot reboot
++28:/Users/megamanics/bin/fastboot reboot
+Rebooting                                          OKAY [  0.000s]
+Finished. Total time: 0.000s
++218:echo 'Flash completed.'
+Flash completed.
++1:rm -rf /var/folders/0m/ksxyqjln0pxc21n2x7r02fbm0000gn/T/tmp.GKm1wYVo
+```
+
+## Power the Coral Dev Board Micro after flashing should see the following output
+```bash
+U-Boot 2019.10 (Dec 09 2020 - 23:51:30 +0000), Build: jenkins-excelsior.excelsior-bootloader-2
+
+CPU:   MediaTek MT8516
+DRAM:  512 MiB
+WDT:   Started with servicing (60s timeout)
+MMC:   mmc@11120000: 0
+Loading Environment from MMC... OK
+In:    serial@11005000
+Out:   serial@11005000
+Err:   serial@11005000
+8GB mmc detected
+Hit any key to stop autoboot:  0
+gpio: pin 42 (gpio 42) value is 1
+switch to partitions #0, OK
+mmc0(part 0) is current device
+1420 bytes read in 1 ms (1.4 MiB/s)
+## Executing script at 4c000000
+Loading image...
+6747990 bytes read in 86 ms (74.8 MiB/s)
+Loading device tree...
+42834 bytes read in 2 ms (20.4 MiB/s)
+104 bytes read in 1 ms (101.6 KiB/s)
+## Loading kernel from FIT Image at 4a000000 .
+.....
+.....
+.....
+.....
+.....
+Starting kernel ...
+
+[    0.000000] Booting Linux on physical CPU 0x0000000000 [0x410fd041]
+[    0.000000] Linux version 4.19.125-mtk (pbuilder@linux-mtk-44a92093-5a4b-410b-8ad5-805072874b42-7qs4k-8xlpx) (gcc version 8.3.0 (Debian 8.3.0-2)) #1 SMP PREEMPT Thu Dec 10 02:36:13 UTC 2020
+[    0.000000] Machine model: Google Coral MT8167
+[    0.000000] efi: Getting EFI parameters from FDT:
+[    0.000000] efi: UEFI not found.
+[    0.000000] cma: Reserved 64 MiB at 0x00000000bc000000
+[    0.000000] psci: probing for conduit method from DT.
+.....
+.....
+.....
+.....
+[  153.443830] IPv6: ADDRCONF(NETDEV_CHANGE): usb0: link becomes ready
+
+Mendel GNU/Linux (eagle) elusive-eft ttyS0
+
+elusive-eft login: mendel
+Password:
+Last login: Thu Dec 10 23:37:18 UTC 2020 from 192.168.100.72 on pts/0
+Linux elusive-eft 4.19.125-mtk #1 SMP PREEMPT Thu Dec 10 02:36:13 UTC 2020 aarch64
+
+The programs included with the Mendel GNU/Linux system are free software;
+the exact distribution terms for each program are described in the
+individual files in /usr/share/doc/*/copyright.
+
+Mendel GNU/Linux comes with ABSOLUTELY NO WARRANTY, to the extent
+permitted by applicable law.
+mendel@elusive-eft:~$
+```
 
 ## Software
 The following software is required for this project:
