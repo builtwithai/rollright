@@ -17,6 +17,8 @@ The following components are required for this project:
 4. Connect the USB-C Power Supply to the Coral Dev Board Micro
 
 ## Connect to the Coral Dev Board Micro
+![image](https://github.com/builtwithai/rollright/assets/10250297/271d2038-2202-4b00-a4cc-a560bd3cb9d6)
+
 ```bash
 screen /dev/cu.usbserial-0001 115200
 ```
