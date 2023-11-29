@@ -1,6 +1,16 @@
 # Roll Right
 Roll Right is an innovative machine learning application designed to enhance accessibility in our everyday environment. Its primary function is to detect and interpret sign language, specifically tailored towards actions such as opening a door. By harnessing the power of machine learning algorithms, Roll Right aims to bridge the communication gap and provide a seamless interaction experience for individuals who use sign language. With Roll Right, command a door to open without physical touch, but through the universal language of signs.
 
+---
+## Hardware
+The following components are required for this project:
+1. [Coral Dev Board Micro](https://coral.ai/docs/dev-board-micro/get-started/)
+2. USB 2.0 to TTL Module Serial Converter Adapter
+---
+
+## Software
+The following software is required for this project:
+
 ## Prerequisites
 * Python 3.7 or higher
 * The following Python packages:
